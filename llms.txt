@@ -1,0 +1,21 @@
+# Xosist-Natural
+
+Xosist-Natural converts a natural-language research intent into multiple high-quality X (Twitter) advanced search queries, and turns collected posts into readable natural-language summaries.
+
+It does **not** call the X API and does **not** scrape X. It only generates official x.com/search URLs and processes text that the user (or agent) pastes in.
+
+## Core capabilities
+
+- composeQueries(intent, { noiseLevel }) → multi-angle search queries
+- synthesize(posts, intent, { style }) → natural language report
+- buildSynthesisPrompt(posts, intent) → prompt for external LLMs
+
+## Free by design
+
+All core planning and synthesis logic runs client-side or offline. No API key required for query generation or basic narrative synthesis.
+
+## Discovery
+
+- Human UI: index.html
+- Agent entry: this file + AGENTS.md (planned)
+- Tools: lib/query-composer.js, lib/synthesizer.js

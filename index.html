@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xosist-Natural — API不要のX検索クエリ生成 & 自然文出力</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Xosist-Natural</h1>
+      <p class="tagline">質問から高品質なX検索クエリを生成し、集めた投稿を自然な文章にまとめる</p>
+    </header>
+
+    <!-- ① 質問入力 -->
+    <section class="card" id="intent-section">
+      <h2>1. 質問を入力</h2>
+      <textarea id="intent-input" rows="3" placeholder="例: x402決済プロトコルの最新の実装事例や課題を知りたい&#10;例: 日本で一番議論されている内容は？"></textarea>
+      <div class="controls">
+        <label>
+          ノイズ低減:
+          <select id="noise-level">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </label>
+        <button id="btn-generate" class="primary" type="button">クエリ生成</button>
+      </div>
+    </section>
+
+    <!-- ② 生成されたクエリ -->
+    <section class="card hidden" id="queries-section">
+      <h2>2. 生成された検索クエリ</h2>
+      <div id="queries-output"></div>
+    </section>
+
+    <!-- ③ 投稿貼り付け -->
+    <section class="card" id="collect-section">
+      <h2>3. 集めた投稿を貼り付け</h2>
+      <p class="hint">1行に1投稿を推奨。公式検索結果からコピーしてください。</p>
+      <textarea id="posts-input" rows="10" placeholder="投稿テキストをここに貼り付け..."></textarea>
+      <div class="controls">
+        <button id="btn-synthesize" class="primary" type="button">自然な文章にまとめる</button>
+      </div>
+    </section>
+
+    <!-- ④ 自然文出力 -->
+    <section class="card hidden" id="synth-section">
+      <h2>4. 自然な文章</h2>
+      <div id="synth-output" class="synth-result"></div>
+      <div class="controls">
+        <button id="btn-copy-synth" type="button">コピー</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>APIキー不要・スクレイピングなし。公式 x.com/search のみ使用。<br>
+      v0.1.1 — file:// でも動作するシングルファイル版</p>
+    </footer>
+  </div>
+
+  <!-- モジュールではなく通常のスクリプト（file://対応） -->
+  <script src="app.bundle.js"></script>
+</body>
+</html>

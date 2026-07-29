@@ -1,0 +1,18 @@
+{
+  "common": [
+    "giveaway", "airdrop", "follow", "retweet", "rt", "like", "subscribe",
+    "click", "link in bio", "dm me", "free nft", "whitelisting"
+  ],
+  "promo_en": [
+    "check out", "link below", "new drop", "mint now", "join now",
+    "limited time", "don't miss"
+  ],
+  "promo_ja": [
+    "フォロー", "リツイート", "いいね", "拡散希望", " inda", " inda希望",
+    "プレゼント企画", "抽選", "応募"
+  ],
+  "low_signal": [
+    "this", "lol", "lmao", "omg", "wow", "nice", "cool", "based",
+    "gm", "gn", "wagmi", "ngmi"
+  ]
+}

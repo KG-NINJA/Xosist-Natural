@@ -1,0 +1,24 @@
+{
+  "missions": [
+    {
+      "id": "general_research",
+      "name": "一般調査",
+      "description": "バランスの取れた複数角度のクエリを生成"
+    },
+    {
+      "id": "tech_implementation",
+      "name": "実装調査",
+      "description": "SDK・コード・ドキュメント寄りに寄せる"
+    },
+    {
+      "id": "problem_hunting",
+      "name": "課題発見",
+      "description": "問題点・批判・不満の声を拾う"
+    },
+    {
+      "id": "trend_pulse",
+      "name": "話題の温度感",
+      "description": "高エンゲージメントの投稿を優先"
+    }
+  ]
+}

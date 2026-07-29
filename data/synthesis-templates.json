@@ -1,0 +1,21 @@
+{
+  "styles": {
+    "report": {
+      "name": "レポート調",
+      "description": "調査報告として読みやすい形式。最も推奨。"
+    },
+    "conversation": {
+      "name": "会話調",
+      "description": "友人に話すような自然な口調。"
+    },
+    "bullet": {
+      "name": "箇条書き",
+      "description": "要点だけを素早く確認したい場合。"
+    }
+  },
+  "sections": {
+    "report": ["調査テーマ", "全体の雰囲気", "代表的な声", "まとめ"],
+    "conversation": ["導入", "主な声", "印象"],
+    "bullet": ["テーマ", "投稿数", "主な声"]
+  }
+}

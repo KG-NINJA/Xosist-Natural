@@ -1,0 +1,13 @@
+{
+  "name": "xosist-natural",
+  "version": "0.1.0-alpha",
+  "description": "API-free X search query composer + natural language synthesizer",
+  "type": "module",
+  "scripts": {
+    "serve": "npx serve .",
+    "test": "node --test test/*.js || echo 'No tests yet'"
+  },
+  "keywords": ["x", "twitter", "search", "query", "agent", "privacy"],
+  "author": "KG-NINJA",
+  "license": "MIT"
+}
